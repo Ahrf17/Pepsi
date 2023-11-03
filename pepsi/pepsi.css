@@ -1,0 +1,199 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: 'Roboto', sans-serif;
+    overflow-x: hidden;
+    overflow-y: hidden;
+}
+
+.container{
+    margin: 0 7rem;
+    height: 100%;
+}
+#home{
+    background-color: #0162ba;
+    height: 100vh;
+    color: #fff;
+}
+
+#home nav img{
+    width: 50px;
+}
+
+a{
+  text-decoration: none;
+}
+
+ul{
+    list-style: none;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 25px 0;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+}
+
+nav ul a{
+    color: #fff;
+    padding: 20px;
+}
+
+#content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 70%;
+}
+
+#content img{
+    width: 220px;
+    animation: animation1 1s ease-out;
+}
+
+#content .content-text h1{
+    font-size: 40px;
+    font-weight: 900;
+    margin-bottom: 10px;
+    text-transform: uppercase;
+}
+
+#content .content-text h1 span{
+    font-size: 70px;
+}
+
+#content .content-text p{
+    font-weight: 300;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    width: 60%;
+}
+
+.btn{
+    font-size: 14px;
+    padding: 10px 15px;
+    background-color: #fff;
+    color: #000;
+    border-radius: 30px;
+    transition: all ease .5s;
+}
+
+.btn:hover{
+    background: transparent;
+    color: #fff;
+    border: 1px solid #fff;
+}
+
+.social{
+    margin-left: 3rem;
+}
+
+.social i{
+    color: #fff;
+    font-size: 25px;
+    margin: 10px 0;
+    animation: animation1 1s ease-out;
+}
+
+.pepsi-three{
+    width: 100px;
+    display: block;
+    margin: auto;
+    animation: animation2 1s ease-out;
+}
+
+
+@keyframes animation1{
+    0%{
+        transform: translateX(500px);
+    }
+
+    100%{
+        transform: translateX(0);
+    }
+}
+
+
+@keyframes animation2{
+    0%{
+        transform: translatey(200px);
+    }
+
+    100%{
+        transform: translatey(0);
+    }
+}
+
+/* tablet */
+
+@media (max-width: 900px){
+    .container{
+        margin: 0 1rem;
+    }
+
+    nav ul a{
+        padding: 10px;
+    }
+    
+    #content{
+        flex-direction: column;
+        text-align: center;
+        padding: 2rem 0 0;
+    }
+
+    #content .content-text p{
+        width: 100%;
+    }
+
+    #content .content-text{
+        margin-bottom: 2rem;
+    }
+
+    #content img{
+        width: 100px;
+        margin-bottom: 10px;
+    }
+
+    .social{
+        margin-left: 0;
+        margin-bottom: 15px;
+    }
+}
+
+/* mobile */
+
+@media (max-width: 600px){
+    nav{
+        display: block;
+    }
+
+    #home nav img{
+        display: block;
+        margin: 0 auto 15px;
+    }
+
+    nav ul {
+        justify-content: center;
+    }
+
+    nav ul a{
+        font-size: 12px;
+    }
+
+    .pepsi-three{
+        margin-top: 15px;
+    }
+}
+
